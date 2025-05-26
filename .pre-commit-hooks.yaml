@@ -1,0 +1,8 @@
+- id: pythoncapi
+  name: pythoncapi-compat
+  description: "Use pythoncapi-compat to support a wide range of Python version with a single code base."
+  entry: upgrade_pythoncapi
+  language: python
+  types_or: [c, c++]
+  args: []
+

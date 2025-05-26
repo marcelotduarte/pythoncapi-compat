@@ -1,0 +1,30 @@
+[build-system]
+requires = [
+    "setuptools>=77.0.3",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pythoncapi-compat"
+description = "Use pythoncapi-compat to support a wide range of Python version with a single code base."
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: C",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+readme = "README.rst"
+requires-python = ">=3.9"
+version = "0.1"
+
+[project.scripts]
+upgrade_pythoncapi = "upgrade_pythoncapi:main"
+
+[tool.setuptools]
+py-modules = ["upgrade_pythoncapi"]
+

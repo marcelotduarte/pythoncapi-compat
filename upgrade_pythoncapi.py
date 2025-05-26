@@ -747,6 +747,8 @@ class Patcher:
 
         sys.exit(self.exitcode)
 
+def main():
+    Patcher().main()
 
 if __name__ == "__main__":
     Patcher().main()
